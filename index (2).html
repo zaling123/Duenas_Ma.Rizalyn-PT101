@@ -1,0 +1,241 @@
+<html lang="en">
+<head>
+    <style>
+        /* Reset and General Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Verdana', sans-serif;
+            background-color: #f0f0f5;
+            color: #333;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        /* Header Styles */
+        header {
+            background: #00416A;
+            color: white;
+            padding: 20px;
+        }
+
+        header img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-top: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            padding: 15px;
+            gap: 20px;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.2rem;
+            padding: 8px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background: #FFA726;
+        }
+
+        /* Menu Section */
+        #menu {
+            background: white;
+            padding: 50px 20px;
+        }
+
+        #menu h2 {
+            font-size: 2rem;
+            color: #FF6F00;
+            margin-bottom: 30px;
+        }
+
+        .menu-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .menu-item {
+            background: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 260px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .menu-item:hover {
+            transform: scale(1.05);
+        }
+
+        .menu-item img {
+            width: 100%;
+            border-bottom: 2px solid #FF6F00;
+        }
+
+        .menu-description {
+            padding: 15px;
+        }
+
+        .menu-description h3 {
+            color: #FF6F00;
+            font-size: 1.5rem;
+            margin-bottom: 8px;
+        }
+
+        .menu-description p {
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #222;
+            margin-top: 5px;
+        }
+
+        /* About Section */
+        #about {
+            background: #FBE9E7;
+            padding: 50px 20px;
+        }
+
+        #about h2 {
+            font-size: 2rem;
+            color: #E64A19;
+            margin-bottom: 15px;
+        }
+
+        #about p {
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        /* Contact Section */
+        #contact {
+            background: #ffffff;
+            padding: 40px 20px;
+        }
+
+        #contact h2 {
+            font-size: 2rem;
+            color: #00416A;
+            margin-bottom: 15px;
+        }
+
+        #contact p {
+            font-size: 1.1rem;
+            color: #444;
+        }
+
+        #contact a {
+            display: inline-block;
+            background: #FFA726;
+            color: white;
+            padding: 10px 20px;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        #contact a:hover {
+            background: #E64A19;
+        }
+    </style>  
+</head>
+<body>
+    <header>
+        <img src="https://i.ibb.co/yndzbRTw/Picsart-25-03-05-16-09-54-721.jpg" width="300" height="200">
+        <h1>FOOD TRIPS</h1>
+        <nav>
+            <ul>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="menu">
+        <h2>Our Menu</h2>
+        <div class="menu-container">
+            <div class="menu-item">
+                <img src="https://i.ibb.co/kgDKjbZ2/2dee00626b03f7ba6b9f5b8bbd004dfa.jpg" alt="Milk Tea">
+                <div class="menu-description">
+                    <h3>Milk Tea</h3>
+                    <p>Bubbles that bring smiles in every cup!</p>
+                    <div class="price">Small ₱29</div>
+                    <div class="price">Large ₱39</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.ibb.co/JWMmyH4z/1b86b67b31ad2f75b085659cb6260424.jpg" alt="Burger">
+                <div class="menu-description">
+                    <h3>Burger</h3>
+                    <p>A burger without cheese is like a hug without a squeeze!</p>
+                    <div class="price">₱45 (Buy 1 Take 1)</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.ibb.co/Fb9Lzb2k/737ed93987aae98a76fc2e5f12fc0ecc.jpg" alt="French Fries">
+                <div class="menu-description">
+                    <h3>French Fries</h3>
+                    <p>The ultimate comfort food!</p>
+                    <div class="price">Small ₱35</div>
+                    <div class="price">Large ₱45</div>
+                </div>
+            </div>
+
+            <div class="menu-item">
+                <img src="https://i.ibb.co/b5dvNqkR/41232e76d0daafcf325e46afb923e709.jpg" alt="Siomai">
+                <div class="menu-description">
+                    <h3>Siomai</h3>
+                    <p>Delicious pork siomai, perfect for a quick bite!</p>
+                    <div class="price">3 for ₱12</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Food Trips is ready to serve you delicious and tasty food to satisfy your cravings!</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>Phone no#: 09659685080</p>
+        <h2>Visit Us</h2>
+        <p><a href="https://www.google.com/maps/place/Foodtrips,+0919+De+Vera,+Bugallon,+Pangasinan/" target="_blank">View us on Google Maps</a>
+        </p>
+    </section>
+</body>
+</html>
